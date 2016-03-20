@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 # Vilniaus miesto problemų web serviso aprašymas
 
 Turinys
@@ -101,24 +91,24 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "login", 
-  "params": [ 
-     { 
-       "login": "test", 
-       "password": "5AF12FFDEA125"
-     }
-   ],
-   "id": 1
+	"params": [ 
+		{ 
+			"login": "test", 
+			"password": "5AF12FFDEA125"
+		}
+	],
+	"id": 1
 }
 ```
 
 Serviso atsakymo pavyzdys:
 ```
 { 
-  "result": {
-     "session_id": "51AEF587DAE" 
-   } 
-  "error": null, 
-  "id": 1
+	"result": {
+		"session_id": "51AEF587DAE" 
+	} 
+	"error": null, 
+	"id": 1
 }
 ```
 
@@ -139,20 +129,20 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "logout", 
-  "params": [ 
-     { 
-       "session_id": "51AEF587DAE" 
-     }
-   ],
-   "id": 2
+	"params": [ 
+		{ 
+			"session_id": "51AEF587DAE" 
+		}
+	],
+	"id": 2
 }
 ```
 Serviso atsakymo pavyzdys:
 ```
 { 
-  "result": true,
-  "error": null, 
-  "id": 2
+	"result": true,
+	"error": null, 
+	"id": 2
 }
 ```
 
@@ -173,16 +163,16 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "register", 
-  "params": [ 
-     { 
-       "username": "test",
-       "password": "test",
-       "email": "test@test.tt",
-       "phone_no": "+37066666666",
-       "imei": "1EA11122234",
-     }
-   ],
-   "id": 3
+	"params": [ 
+		{ 
+			"username": "test",
+			"password": "test",
+			"email": "test@test.tt",
+			"phone_no": "+37066666666",
+			"imei": "1EA11122234",
+		}
+	],
+	"id": 3
 }
 ```
 
@@ -191,11 +181,11 @@ Užklausos pavyzdys:
 Serviso atsakymo pavyzdys:
 ```
 { 
-  "result": {
-     "session_id": "51AEF587DAE" 
-   } 
-  "error": null, 
-  "id": 3
+	"result": {
+		"session_id": "51AEF587DAE" 
+	} 
+	"error": null, 
+	"id": 3
 }
 ```
 
@@ -219,17 +209,17 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "get_problem_types", 
-  "params": null,
-  "id": 4
+	"params": null,
+	"id": 4
 }
 ```
 
 Serviso atsakymo pavyzdys:
 ```
 { 
-  "result": [ "Tipas1", "Tipas2", "Tipas3" ] 
-  "error": null, 
-  "id": 4
+	"result": [ "Tipas1", "Tipas2", "Tipas3" ] 
+	"error": null, 
+	"id": 4
 }
 ```
 
@@ -247,7 +237,7 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "new_problem", 
-  "params": {
+	"params": {
 		"session_id": "51AEF587DAE",
 		"description": "test",
 		"type": "Tipas1",
@@ -258,8 +248,8 @@ Užklausos pavyzdys:
 		["phone": "+37066666666",]
 		["message_description": "test2",]
 		["photo": "TWFuIGlzIGRpc…."]
-  },
-  "id": 5
+	},
+	"id": 5
 }
 ```
 
@@ -268,9 +258,9 @@ Užklausos pavyzdys:
 Serviso atsakymo pavyzdys:
 ```
 { 
-  "result": true 
-  "error": null, 
-  "id": 5
+	"result": true 
+	"error": null, 
+	"id": 5
 }
 ```
 
@@ -291,47 +281,47 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "get_problems", 
-  "params": {
-     "description_filter": null,
-     "type_filter": "Tipas1",
-     "address_filter": null,
-     "reporter_filter": null,
-     "date_filter": null,
-     "status_filter": null,
-     "start": null,
-     "limit": 2
-  },
-  "id": 6
+	"params": {
+		"description_filter": null,
+		"type_filter": "Tipas1",
+		"address_filter": null,
+		"reporter_filter": null,
+		"date_filter": null,
+		"status_filter": null,
+		"start": null,
+		"limit": 2
+	},
+	"id": 6
 }
 ```
 
 Serviso atsakymo pavyzdys:
 ```
 { 
-  "result": [
-    {
-      "docNo": "test"
-      "description": "test",,
-      "status": "Atlikta",
-      "address": "Laisves pr. 2",
-      "answer": "Problema buvo išspresta",
-      "from_app": false,
-      "x": 10.1518,
-      "y": 2.01118,
-    },
-    {
-      "docNo": "test",
-      "description": "test2",
-      "status": "Vykdoma",
-      "address": "Laisves pr. 2",
-      "answer": null,
-      "from_app": true,
-      "x": 10.1518,
-      "y": 2.01118,
-    }
-  ],
-  "error": null, 
-  "id": 6
+	"result": [
+		{
+			"docNo": "test"
+			"description": "test",,
+			"status": "Atlikta",
+			"address": "Laisves pr. 2",
+			"answer": "Problema buvo išspresta",
+			"from_app": false,
+			"x": 10.1518,
+			"y": 2.01118,
+		},
+		{
+			"docNo": "test",
+			"description": "test2",
+			"status": "Vykdoma",
+			"address": "Laisves pr. 2",
+			"answer": null,
+			"from_app": true,
+			"x": 10.1518,
+			"y": 2.01118,
+		}
+	],
+	"error": null, 
+	"id": 6
 }
 ```
 
@@ -350,10 +340,10 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "get_problem", 
-  "params": {
-     "id": "E50-1098-(3.2.8E-UK7)"
-  },
-  "id": 7
+	"params": {
+		 "id": "E50-1098-(3.2.8E-UK7)"
+	},
+	"id": 7
 }
 ```
 
@@ -400,11 +390,11 @@ Užklausos pavyzdys:
 ```
 { 
 	"method": "get_addresses", 
-  "params": {
-     "string": "Mint"
-     "limit": 2
-  },
-  "id": 8
+	"params": {
+		"string": "Mint"
+		"limit": 2
+	},
+	"id": 8
 }
 ```
 
@@ -428,4 +418,3 @@ Galimi klaidos kodai:
 |:---|:---|
 | 1 | Serverio klaida |
 | 2 | Neteisingai suformuota užklausa |
-
