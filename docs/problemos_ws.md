@@ -4,14 +4,14 @@ Turinys
 
 1. Miesto problemų informacinės sistemos plėtinio (toliau - MPISP) duomenys
 2. Web servisų aprašymas
-	1. Metodas Login
-	2. Metodas Logout
-	3. Metodas Register
-	4. Metodas GetProblemTypes
-	5. Metodas NewProblem
-	6. Metodas GetProblems
-	7. Metodas GetProblem
-	8. Metodas GetAddresses
+	1. [Metodas Login](#metodas-login)
+	2. [Metodas Logout](#metodas-logout)
+	3. [Metodas Register](#metodas-register)
+	4. [Metodas GetProblemTypes](#metodas-getproblemtypes)
+	5. [Metodas NewProblem](#metodas-newproblem)
+	6. [Metodas GetProblems](#metodas-getproblems)
+	7. [Metodas GetProblem](#metodas-getproblem)
+	8. [Metodas GetAddresses](#metodas-getaddresses)
 
 
 ## Miesto problemų informacinės sistemos plėtinio (toliau - MPISP) duomenys
