@@ -300,8 +300,8 @@ Serviso atsakymo pavyzdys:
 { 
 	"result": [
 		{
-			"docNo": "test"
-			"description": "test",,
+			"docNo": "test",
+			"description": "test",
 			"status": "Atlikta",
 			"address": "Laisves pr. 2",
 			"answer": "Problema buvo išspresta",
