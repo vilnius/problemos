@@ -8,5 +8,6 @@ nuotraukos.csv - list of attachments for problems. Base path is: http://www.viln
 
 # Miesto problemų API
 
-Adresas: http://www.vilnius.lt/m/m_problems/files/mobile/server.php
+Adresas: tvarkaumiesta.lt/mob_api/server.php
+
 Dokumentacija: docs/Miesto problemos WS.docx
